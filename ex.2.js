@@ -2,12 +2,12 @@ const nums = [1, -2, 3, -4, 5];
 
 function lastNegativeIndex(nums) {
   let idx = -1;
-  for (let i = nums.length; i >= 0; i--) {
+  for (let i = nums.length -1; i >= 0; i--) {
     if (nums[i] < 0) {
-      idx = i;
+      return i;
     }
   }
-  return idx;
+  return -1;
 }
 
 console.log(lastNegativeIndex(nums));
